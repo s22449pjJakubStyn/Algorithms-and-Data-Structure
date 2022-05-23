@@ -8,8 +8,6 @@ with open(file_array) as f:
         numbers = int(line)
         arr.append(numbers)
 
-start = time.time()
-
 
 def heapify(A, n, i):
     largest = i
@@ -38,7 +36,9 @@ def heapSort(A):
         heapify(A, i, 0)
 
 
+arr.sort(reverse=True)
 # print(arr)
+start = time.time()
 heapSort(arr)
 n = len(arr)
 # print ("Sorted table is: ")

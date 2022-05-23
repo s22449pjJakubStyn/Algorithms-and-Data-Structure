@@ -1,7 +1,5 @@
 import time
 
-start = time.time()
-
 file_array = "../sorted.txt"
 
 with open(file_array) as f:
@@ -23,7 +21,9 @@ def insertion_sort(arr):
         del arr[i + 1]
 
 
+arr.sort()
 # print(arr)
+start = time.time()
 insertion_sort(arr)
 # print("Sorted table is: ")
 # print(arr)

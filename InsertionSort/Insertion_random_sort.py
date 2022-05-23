@@ -1,6 +1,5 @@
 import time
 
-start = time.time()
 
 file_array = "../random.txt"
 
@@ -24,6 +23,7 @@ def insertion_sort(arr):
 
 
 # print(arr)
+start = time.time()
 insertion_sort(arr)
 # print("Sorted table is: ")
 # print(arr)

@@ -8,8 +8,6 @@ with open(file_array) as f:
         numbers = int(line)
         arr.append(numbers)
 
-start = time.time()
-
 
 def partition(A, p, r):
     x = A[r]
@@ -39,10 +37,12 @@ def quicksort(A):
     return _quicksort(A, 0, len(A) - 1)
 
 
+arr.sort(reverse=True)
 # print(arr)
+start = time.time()
 quicksort(arr)
 n = len(arr)
-# print ("Sorted table is: ")
+# print("Sorted table is: ")
 # print(arr)
 print("The time used to execute this is given below")
 end = time.time()

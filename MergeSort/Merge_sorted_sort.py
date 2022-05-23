@@ -8,8 +8,6 @@ with open(file_array) as f:
         numbers = int(line)
         arr.append(numbers)
 
-start = time.time()
-
 
 def merge_sort(A):
     if len(A) > 1:
@@ -42,7 +40,9 @@ def merge_sort(A):
             k += 1
 
 
+arr.sort()
 # print(arr)
+start = time.time()
 merge_sort(arr)
 # print("Sorted table is: ")
 # print(arr)
